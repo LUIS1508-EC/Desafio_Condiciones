@@ -7,17 +7,40 @@
     <title>Condiciones</title>
 </head>
 <body>
+<select class="primero" name="" id="">
+<option value="1">OPCION 1</option>
+<option value="2">OPCION 2</option>
+<option value="3">OPCIOM 3</option>
+</select>
+<button onclick="
+parrafo = document.querySelector('p')
+contraseña = document.querySelector('.primero').value
+
+if(contraseña == 1){
+    alert('adelante')
+}else if(contraseña == 2){
+    alert('para un poco')
+}else{
+    alert('no pases')
+}
+
+">Verificar</button>
+<p>
+
+
+</p>
+
+
+<section class="contenedor">
+<img class="wanted" src="./assets/images/luffi_wanted.png" alt="LUFFI">
+<img class="wanted" src="./assets/images/nami_wanted.jpg" alt="NAMI">
+<img class="wanted" src="./assets/images/zoro_wanted.jpg" alt="ZORO">
+</section>
 
 
 
 
 
-
-
-
-
-
-    
     <script src="./assets/js/scripts.js"></script>
 </body>
 </html>

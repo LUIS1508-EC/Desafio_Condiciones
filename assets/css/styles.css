@@ -1,0 +1,23 @@
+.contenedor{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wanted{
+    width: 200px;
+    margin: 20px;
+}
+
+.contenedor2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.piratas{
+    width: 500px;
+    border-color: brown;
+    border: 30px;
+}
