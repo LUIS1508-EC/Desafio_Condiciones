@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Condiciones</title>
+</head>
+
+<body>
+    
+    <h2>SELECCIONA TUS STICKERS</h2>
+    <section class="ejercicio2">
+        <div class="contenedor">
+            <div class="contenedor_imagen">
+                <div><img class="wanted" src="./assets/images/luffi_wanted.png" alt="LUFFI"></div>
+                <div><input type="number" min="0" id="luffi"></div>
+            </div>
+
+            <div class="contenedor_imagen">
+                <div><img class="wanted" src="./assets/images/nami_wanted.jpg" alt="NAMI"></div>
+                <div><input type="number" min="0" id="nami"></div>
+            </div>
+
+            <div class="contenedor_imagen">
+                <div><img class="wanted" src="./assets/images/zoro_wanted.jpg" alt="ZORO"></div>
+                <div><input type="number" min="0" id="zoro"></div>
+            </div>
+    </section>
+    <div class="seleccion">
+        <p id="total1">Seleccione stickers</p>
+    </div>
+    <div class="seleccion">
+        <button onclick="
+            luffi = document.querySelector('#luffi')
+            nami = document.querySelector('#nami')
+            zoro = document.querySelector('#zoro')
+            total1 = document.querySelector('#total1')
+            
+            // Suma valores ingresados
+            total = Number(luffi.value) + Number(nami.value) + Number(zoro.value)
+                if (total > 10) {
+                    total1.innerHTML = 'Llevas demasiados stickers'
+                } else  {
+                    total1.innerHTML = 'Llevas ' + total + ' stickers'
+                }
+            ">Verificar
+        </button>
+    </div>
+
+
+    <script src=" ./assets/js/scripts.js"></script>
+</body>
+
+</html>

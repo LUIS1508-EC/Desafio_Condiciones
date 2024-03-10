@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Condiciones</title>
+</head>
+
+<body>
+    <h2>PRESIONA LA IMAGEN</h2>
+    <section class="ejercicio1">
+        <img class="piratas" src="./assets/images/one_piece.jpg" alt="BANDERA" onclick="
+        piratas = document.querySelector('.piratas')
+        if(piratas.style.border === ''){
+        piratas.style.border='2px red solid'
+        }else{
+        piratas.style.border = ''
+        }">
+    </section>
+    <script src=" ./assets/js/scripts.js"></script>
+</body>
+
+</html>
